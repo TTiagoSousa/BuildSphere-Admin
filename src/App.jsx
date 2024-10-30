@@ -1,14 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import * as Public_Page from './Imports/public.pages';
+import GlobalAlert from './Components/Alerts/Global_Alert/Global_Alert';
 
 function App() {
 
   return (
     <>
       <main>
+        <GlobalAlert />
+
         <Routes>
           <Route index element={<Public_Page.Index />} />
+          <Route path='Sign_In' element={<Public_Page.Sign_In />} />
         </Routes>
       </main>
     </>
