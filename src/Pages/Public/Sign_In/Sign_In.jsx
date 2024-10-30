@@ -3,32 +3,16 @@ import './Sign_In.scss';
 import Base_Input from '../../../Components/Inputs/Base_Input/Base_Input';
 import Global_Button from '../../../Components/Buttons/Global_Button/Global_Button';
 import { NavsState } from '../../../Contexts/Navs_Context';
+import { useSignin } from '../../../Hooks/Auth/useSignin';
 
 const Sign_In = () => {
 
-  const { setAlert } = NavsState();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    if (!email || !password) {
-      setAlert({
-        open: true,
-        message: 'Por favor, preencha todos os campos',
-        type: 'error',
-      });
-      return;
-    }
-
-    // Simule uma verificação de login bem-sucedida
-    setAlert({
-      open: true,
-      message: 'Login efetuado com sucesso!',
-      type: 'success',
-    });
-  };
+  const{     
+    employeeNumber, setEmployeeNumber,
+    email, setEmail,
+    password, setPassword,
+    signin 
+  } = useSignin();
 
   return (
     <div className='Sign_In'>
@@ -42,17 +26,23 @@ const Sign_In = () => {
           <div className="Input_Field">
             <Base_Input 
               placeholder='Email'
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="Input_Field">
             <Base_Input 
               placeholder='Password'
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
           <div className="Button_Field">
             <Global_Button 
               text="Login"  
-              onClick={handleLogin}          
+              onClick={signin}          
             />
           </div>
         </form>
