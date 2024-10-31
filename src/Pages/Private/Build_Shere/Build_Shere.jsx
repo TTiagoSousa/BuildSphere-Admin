@@ -8,7 +8,7 @@ const Build_Shere = () => {
   return (
     <>
 
-      <div className='CE_Section'>
+      <div className='Build_Shere'>
         <div>
           <Private_Routes />
         </div>
