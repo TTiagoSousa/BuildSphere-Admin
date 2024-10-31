@@ -1,0 +1,9 @@
+@use '../../../Styles/Colors.scss' as colors;
+@use '../../../Styles/Fonts.scss' as fonts;
+@use '../../../Styles/Formats.scss' as formats;
+
+.Loading_Page{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}

@@ -1,0 +1,24 @@
+@import 'primereact/resources/themes/saga-blue/theme.css';
+
+.p-toast{
+  
+  div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .p-toast-message-content{
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center;
+
+      svg{
+        height: 20px;
+      }
+
+      .p-toast-message-text{
+        gap: 0px !important;
+      }
+    }
+  }
+}
