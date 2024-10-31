@@ -4,5 +4,6 @@
 
 .Dashboard{
   @include Pages_Configs;
-  min-height: 95vh;
+  min-height: 100vh;
+  background-color: red;
 }

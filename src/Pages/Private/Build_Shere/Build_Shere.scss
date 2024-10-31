@@ -3,7 +3,15 @@
 .Build_Shere {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: auto;
   justify-content: right;
-  background-color: #f4f6fb;
+
+  .Content{
+    width: calc(100% - 250px);
+    height: auto;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }

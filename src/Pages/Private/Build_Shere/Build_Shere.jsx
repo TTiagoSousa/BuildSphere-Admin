@@ -12,7 +12,7 @@ const Build_Shere = () => {
       <Sidebar_Home />
 
       <div className='Build_Shere'>
-        <div>
+        <div className='Content'>
           <Private_Routes />
         </div>
       </div>
