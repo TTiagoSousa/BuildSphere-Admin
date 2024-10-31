@@ -55,7 +55,7 @@ export const useSignin = () => {
       });
 
       setTimeout(() => {
-        navigate('/CE_Work_Space/Dashboard');
+        navigate('/Build_Sphere/Dashboard');
  
       }, 3000);
 

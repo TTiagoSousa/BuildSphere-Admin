@@ -17,7 +17,7 @@ function App() {
           <Route path='Sign_In' element={<Public_Page.Sign_In />} />
 
           <Route
-            path="/CE_Work_Space/*"
+            path="/Build_Sphere/*"
             element={
               <Authentication_Check>
                 <Private_Page.Build_Shere />
