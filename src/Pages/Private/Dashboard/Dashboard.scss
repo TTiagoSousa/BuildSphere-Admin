@@ -1,8 +1,8 @@
-@import '../../../Styles/Colors.scss';
-@import '../../../Styles/Fonts.scss';
-@import '../../../Styles/Formats.scss';
+@use '../../../Styles/Colors.scss' as colors;
+@use '../../../Styles/Fonts.scss' as fonts;
+@use '../../../Styles/Formats.scss' as formats;
 
-.Dashboard{
-  @include Pages_Configs;
+.Dashboard {
+  @include formats.Pages_Configs;
   min-height: 100vh;
 }

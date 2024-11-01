@@ -1,4 +1,7 @@
-@import '../../../Styles/Formats.scss';
+@use '../../../Styles/Colors.scss' as colors;
+@use '../../../Styles/Fonts.scss' as fonts;
+@use '../../../Styles/Formats.scss' as formats;
+
 
 .Build_Shere {
   display: flex;
